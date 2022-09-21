@@ -89,7 +89,9 @@ export class MonksLittleDetails {
             MonksLittleDetails.xpchart = CONFIG.DND5E.CR_EXP_LEVELS;
         else if (game.system.id == 'pf2e') {
             MonksLittleDetails.xpchart = [50, 400, 600, 800, 1200, 1600, 2400, 3200, 4800, 6400, 9600, 12800, 19200, 25600, 38400, 51200, 76800, 102400, 153600, 204800, 307200, 409600, 614400, 819200, 1228800, 1638400, 2457600, 3276800, 4915200, 6553600, 9830400];
-        }
+        } else if (game.system.id == 'ds4') {
+	    MonksLittleDetails.xpchart = [0, 100, 300, 600, 1000, 1500, 2100, 2800, 3600, 4500, 5500, 6600, 7800, 9100, 10500, 12000, 13700, 15600, 17700, 20000];
+	}
 
         MonksLittleDetails.crChallenge = [
             { text: (game.system.id == 'pf2e' ? "MonksLittleDetails.trivial" : "MonksLittleDetails.easy"), rating: 'easy' },
